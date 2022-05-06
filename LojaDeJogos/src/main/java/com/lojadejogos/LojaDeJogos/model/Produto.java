@@ -20,14 +20,10 @@ public class Produto {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@NotNull
-	@Size(max = 25)
 	private String nome;
 	
-	@Size(max = 100)
 	private String descricao;
 	
-	@Positive
 	private double preco;
 	
 	@ManyToOne

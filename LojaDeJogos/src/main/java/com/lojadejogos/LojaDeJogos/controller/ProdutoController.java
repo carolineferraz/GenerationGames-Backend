@@ -1,6 +1,7 @@
 package com.lojadejogos.LojaDeJogos.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import javax.validation.Valid;
 
@@ -52,7 +53,9 @@ public class ProdutoController {
 	
 	@PutMapping
 	public ResponseEntity<Produto> put (@Valid @RequestBody Produto produto) {
-		return ResponseEntity.status(HttpStatus.OK).body(repository.save(produto));
+		Optional<Produto> objetoProduto = repository.findById(produto.getId());
+		return objetoProduto.map(resp -> ResponseEntity.status(HttpStatus.OK).body(repository.save(produto)))
+				.orElse(ResponseEntity.status(HttpStatus.NOT_FOUND).build());
 	}
 	
 	@DeleteMapping("/{id}")
