@@ -2,11 +2,11 @@
 
 
 
-### :point_right:  Descrição: Back-end de uma loja de jogos fictícia, realizado como atividade durante o Bootcamp da Generation Brasil.
+### :video_game:  Descrição: Back-end de uma loja de jogos fictícia, realizado como atividade durante o Bootcamp da Generation Brasil.
 
 
 
-### :point_right: Objetivos:
+### :video_game: Objetivos:
 
 #### :heavy_check_mark: Criar o projeto no Spring seguindo as boas práticas
 
