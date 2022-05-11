@@ -20,4 +20,6 @@
 
 #### :heavy_check_mark: Seguir todas as boas práticas estudadas nas primeiras sessões sobre Spring (Model, Repository e Controller).
 
+#### :heavy_check_mark: Implementar o Spring Security
+
 #### :heavy_check_mark: Testar toda a API utilizando o Postman

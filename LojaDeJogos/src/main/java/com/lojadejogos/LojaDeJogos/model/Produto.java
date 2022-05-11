@@ -21,17 +21,23 @@ public class Produto {
 	private long id;
 	
 	@NotNull
+	@Size(max = 100)
 	private String nome;
 	
 	@Size(max = 1000)
 	private String descricao;
 	
 	@Positive
+	@NotNull
 	private double preco;
 	
 	@ManyToOne
 	@JsonIgnoreProperties("produto")
 	private Categoria categoria;
+	
+	@ManyToOne
+	@JsonIgnoreProperties("usuario")
+	private Usuario usuario;
 
 	public long getId() {
 		return id;
@@ -71,6 +77,14 @@ public class Produto {
 
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
 	}
 	
 }
