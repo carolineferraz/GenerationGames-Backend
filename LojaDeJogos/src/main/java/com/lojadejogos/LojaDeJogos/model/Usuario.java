@@ -26,7 +26,7 @@ public class Usuario {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@NotNull(message = "O atributo Nome é obrigatório!")
+	@NotNull(message = "O atributo nome é obrigatório.")
 	private String nome;
 	
 	@Schema(example = "email@email.com.br")
@@ -35,7 +35,7 @@ public class Usuario {
 	private String usuario;
 	
 	@NotBlank
-	@Size(min = 8, message = "A senha deve ter no mínimo 8 caracteres")
+	@Size(min = 8, message = "A senha deve ter no mínimo 8 caracteres.")
 	private String senha;
 	
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
