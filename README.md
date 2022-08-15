@@ -2,7 +2,7 @@
 
 
 
-### :video_game:  Descrição: Back-end de uma loja de jogos fictícia, realizado como atividade durante o Bootcamp da Generation Brasil.
+### :video_game:  Descrição: Back-end de uma loja de jogos fictícia, utilizando linguagem Java com o framework Spring Boot
 
 
 
@@ -18,7 +18,7 @@
 
 #### :heavy_check_mark: Criar o Relacionamento do tipo One to Many entre as Classes Categoria e Produto
 
-#### :heavy_check_mark: Seguir todas as boas práticas estudadas nas primeiras sessões sobre Spring (Model, Repository e Controller).
+#### :heavy_check_mark: Seguir todas as boas práticas sobre Spring (Model, Repository e Controller).
 
 #### :heavy_check_mark: Implementar o Spring Security
 
