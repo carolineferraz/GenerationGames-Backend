@@ -23,7 +23,7 @@ public class Categoria {
 	private long id;
 	
 	@NotNull
-	@Size(max = 25)
+	@Size(max = 100)
 	private String genero;
 	
 	@OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL)
